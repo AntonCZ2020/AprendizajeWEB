@@ -5,6 +5,7 @@ class Persona{
     private $apellidos;
     private $email;
     private $password;
+    
 
     public function __construct($nombres=null, $apellidos=null, $email=null, $password=null){
 
@@ -52,5 +53,7 @@ class Persona{
 
 
     }
+
+   
 }
 ?>
