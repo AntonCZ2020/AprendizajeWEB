@@ -17,6 +17,11 @@
 
         }
     }
+    else 
+    {
+        print("No hay usuarios regsitrados, primero necesita registrarse");
+        
+    }
 $i=0;
 $n=count($listaPersonas);
 while( $i<$n){
@@ -37,11 +42,15 @@ if ($i<$n)
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
    
-    echo "Bienvenido a la pagina privada";
+    echo "Bienvenido a la pagina privada <br>";
+    echo "<a href=../index.html>Volver al inicio</a>";
 
 }
 else
 {
-    echo "Acceso denegado";
+
+   echo "No es usuario o pasword valido <br>";
+   echo "<a href=../index.html>Volver al inicio</a>";
+
 }
 ?>

@@ -31,10 +31,14 @@
     }
         
     if($i<$n){
-        print("El correo ya existe");
+        print("El correo ya existe <br>");
+        echo"<a href=../index.html>Volver al inicio para abrir sesion</a>";
     }
     else{
         $persona = new Persona($nombres, $apellidos, $correo, $clave);
         $persona->agregarPersona();
+
+        echo "Registro Exitoso <br>";
+        echo "<a href=../index.html>Volver al inicio para abrir sesion</a>";
     }
 ?>

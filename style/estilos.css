@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url(../img/1.jpg);
+   
     background-size: cover;
     background-attachment: fixed;
     font-family: Roboto;
@@ -15,9 +15,9 @@ body {
 .Membrete,
 .contenedor-form {
     background: rgba(0,0,0,.7);
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
-    margin: 48px auto;
+    margin: 10px auto;
     border-radius: 5px;
     color: #fff;
     position: relative;
