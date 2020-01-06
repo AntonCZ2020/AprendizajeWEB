@@ -30,7 +30,7 @@ class Persona{
         return $this->email;
     }
 
-    public function getPaswword(){
+    public function getPassword(){
         return $this->password;
     }
 
@@ -39,7 +39,7 @@ class Persona{
         $datosPersona[] = $this->getNombres();
         $datosPersona[] = $this->getApellidos();
         $datosPersona[] = $this->getEmail();
-        $datosPersona[] = $this->getPaswword();
+        $datosPersona[] = $this->getPassword();
         if(!file_exists("../Modelo/contactos.csv")){
             $archivo = fopen("../Modelo/contactos.csv", "w");
             fputcsv($archivo, $datosPersona);

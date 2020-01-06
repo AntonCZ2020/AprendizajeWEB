@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/estilos.css">
 </head>
 <body>
-    <Form method="POST" action="ctrlLogin.php">
-       Correo Electronico: <input type="text" name="email" > <br>
-       Password: <input type="Password" name = "password"><br>
-       <input type="submit">
-    </Form>
+    <div class ="Membrete">
+        <p align="center"> <img src="LogoUNIR.jpg" width="308" height="201 "></p>
+        <pre align="center">Maestria en Ingenieria de Software
+                                Computci'on en el Servidor WEB
+                                    Desarrollo WEB Avanzado
+                                   Jos'e Antonio Cruz Zamora</pre>
+    </div>
+    <div class="contenedor-form"> 
+    
+        <div class="formulario">  
+              
+         </div>
+         
+         <div class="formulario">  
+              <Form  action="../Controlador/ctrlLogin.php" method="POST">
+                    Correo Electronico: <input type="email" name="email" > <br>
+                    Password: <input type="Password" name = "password"><br>
+                    <input type="submit">
+                </Form>
+         </div>
+         <!--<div class="reset-password">
+              <a href="">Olvide mi Contraseña?</a>
+         </div>-->
+    </div>   
+    
 </body>
 </html>
